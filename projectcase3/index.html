@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- 
+      Website: Car Care -project-3
+       Author: Sreekanth
+       Date: 11.5.2018
+-->
+
+<html lang="en">
+<head>
+<title>CarCare</title>  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="car.css"> 
+<script src="modernizr.custom.05819.js"></script>
+</head>
+<!-- Adding navigation bar-->
+<body>
+<div class="carnav">
+<a href="index.html">Home</a> 
+<a href="carrental.html">Car Rental</a> 
+<a href="caracces.html">Car Accesories</a> 
+<a href="aboutus.html">About Us</a>
+<a href="contact.html">Contact Us</a>
+</div>
+<header>
+<div id="carcare">
+<br>
+<h2> CAR CARE</h2>
+<h3>"Complete Car Solution "</h3>
+</header>
+<div class="carhead">
+<header>
+<h2> Home</h2>
+</div>
+</header>
+<div class ="cartext">
+<p> About this website </p>
+</div>
+<article>
+<!-- Javascript to write  ordered list elements-->
+<script >
+	document.write("<ul>");
+	document.write("<li>Here is the complete solution for your car.</li>");
+	document.write("<li>Rent your dream car.</li>");
+	document.write("</ul>");
+</script>
+</article>
+</div>
+
+<div class="newdiv">
+<br>
+<h3><u> Here are our recommended Vehicles</u></h3>
+<form id="form1">
+Enter Number Of Passengers:  <input name="name" type="number" >     <button type="button" onclick="carname()"> submit</button>
+<br>
+<br>
+<img id="carimage"  src="image/car0.jpg" width="300" height="300" align="center">
+</form>
+<!-- Javascript for selecting car by selecting number of passengers---->
+<script>
+function  carname() {
+var  x,y;
+var image = document.getElementById('carimage');
+x=document.getElementById("form1");
+y=x.elements["name"].value;
+
+if (y<=0) {
+image.src = "image/im1.jpg";
+document.getElementById("demo") .innerHTML="Enter Number Of Passengers";
+}
+else if (y==1){
+image.src = "image/small1.jpg";
+document.getElementById("demo") .innerHTML="Honda Brio <br>1-2 Seater<br>$20/Hour";
+}
+else if (y==2){
+image.src = "image/small2.jpg";
+document.getElementById("demo") .innerHTML="Mazda-MX-5-2 Seater<br>convertable<br>$80/Hour";
+document.getElementById("name").value = ""; 
+}
+else if (y==3){
+image.src = "image/mid1.png";
+document.getElementById("demo") .innerHTML="Toyota Corolla Altis<br>3-4 Seater<br>$40/Hour";
+}
+else if (y==4){
+image.src = "image/mid2.jpg";
+document.getElementById("demo") .innerHTML="BMW<br>4 Seater<br>$80/Hour";
+}
+else if (y==5){
+image.src = "image/suv1.jpg";
+document.getElementById("demo") .innerHTML="Hyundai santa fe<br>4 Seater<br>$60/Hour";
+}
+else if (y==6){
+image.src = "image/suv3.jpg";
+document.getElementById("demo") .innerHTML="Nissan Armada<br>6 Seater<br>$60/Hour";
+}
+else if (y==7){
+image.src = "image/suv2.jpg";
+document.getElementById("demo") .innerHTML="KIA Sorento<br>7 Seater<br>$60/Hour";
+}
+else if (y==8){
+image.src = "image/8seat.jpg";
+document.getElementById("demo") .innerHTML="GMC Yuko<br>8 Seater<br>$60/Hour";
+}
+else if (y==9){
+image.src = "image/suv4.jpg";
+document.getElementById("demo") .innerHTML="Chevrolet Suburban <br>9 Seater<br>$80/Hour";
+}
+else if (y==10){
+image.src = "image/van1.jpg";
+document.getElementById("demo") .innerHTML="Toyota Hiace <br>10 Seater<br>$80/Hour";
+}
+else if (y>=11){
+image.src = "image/temp1.jpg";
+}
+}
+</script>
+<P id="demo"></p>
+</div>
+
+<!--Content for footer-->
+<footer> 
+	Copyright &copy; 2018 Sreecarcare <br>
+</footer>
+</body>
+</html>
