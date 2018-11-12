@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- 
+      Website: Car Care -project- 4
+       Author: Sreekanth
+       Date: 11.11.2018
+-->
+
+<html lang="en">
+<head>
+<title>CarCare</title>  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="car.css"> 
+<script src="modernizr.custom.05819.js"></script>
+</head>
+<!-- Adding navigation bar-->
+<body>
+<div class="carnav">
+<a href="index.html">Home</a> 
+<a href="carrental.html">Car Rental</a> 
+<a href="caracces.html">Car Accesories</a> 
+<a href="aboutus.html">About Us</a>
+<a href="contact.html">Contact Us</a>
+</div>
+<header>
+<div id="carcare">
+<br>
+<h2> CAR CARE</h2>
+<h3>"Complete Car Solution "</h3>
+</header>
+<div class="carhead">
+<header>
+<h2> Home</h2>
+</div>
+</header>
+<div class ="cartext">
+<p > Exception Handling</p>
+</div>
+ Enter your name  <input type="text" id="name"  />
+ </br>
+ </br>
+Enter your Age   <input type="number" id="age"  /> <p id="err1"></p>
+</br>
+</br>
+
+Select type of Vehicles :-<input type="checkbox" name="vechle"  id="car" />
+               <label for="car">Car</label>
+               <input type="checkbox" id="van" />
+               <label for="corn">van</label> <p id="err2"></p>
+</br>
+</br>
+<button type="button" onclick="err()">Submit</button>
+
+<script>
+
+function err() {
+    var msg, x;
+    msg = document.getElementById("err1");
+    msg.innerHTML = "";
+    x = document.getElementById("age").value;
+    try { 
+        if(x == "") throw "(Select your age)";/* verify input entry is empty */
+
+        if(x < 16) throw "(Must be more than 16)";/* verify input entry is less than 16 */
+		if(x > 16) throw "(Welcome)";/* verify input entry is above 16 */
+    }
+    catch(err) {
+        msg.innerHTML = "" + err;
+    }
+	/* verify at least one checkbox is checked */
+	var i= 	document.getElementById("car").checked;
+	var j=  document.getElementById("van").checked;
+	var msg2= document.getElementById("err2");
+    msg2.innerHTML = "";
+	try{
+	if ((i=="")&&(j=="")) throw "(Select type of Vehicle)";
+	}
+	catch (err) {
+	msg2.innerHTML = "" + err;
+	}
+}
+</script>
+
+
+<!--Content for footer-->
+<footer> 
+	Copyright &copy; 2018 Sreecarcare <br>
+</footer>
+</body>
+</html>
