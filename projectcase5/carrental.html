@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!-- 
+Website: Car Care
+       Author: Sreekanth
+       Date: 10.23.2018
+-->
+<head>
+<title>CarCare</title>  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="car.css"> 
+<script src="modernizr.custom.05819.js"></script>
+<html lang="en">
+</head>
+<body>
+
+<div class="carnav">
+<a href="index.html">Home</a> 
+<a href="carrental.html">Car Rental</a> 
+<a href="caracces.html">Car Accesories</a> 
+<a href="aboutus.html">About Us</a>
+<a href="contact.html">Contact Us</a>
+</div>
+
+<header>
+<div id="carcare">
+<br>
+<h2> CAR CARE</h2>
+<h3>"Complete Car Solution "</h3>
+</header>
+<div class="carhead">
+<header>
+<h2> Car Rental</h2>
+</div>
+</header>
+<article>
+<div class="cartext">
+<p>Rent your car</p>
+</div>
+<div class="newdiv">
+<br>
+<h3><u> Here are our recommended Vehicles</u></h3>
+<form id="form1">
+Enter Number Of Passengers:  <input name="name" type="number" >     <button type="button" onclick="carname()"> submit</button>
+<br>
+<br>
+<img id="carimage"  src="image/car0.jpg" width="300" height="300" align="center">
+</form>
+<!-- Javascript for selecting car by selecting number of passengers---->
+<script>
+function  carname() {
+var  x,y;
+var image = document.getElementById('carimage');
+x=document.getElementById("form1");
+y=x.elements["name"].value;
+
+if (y<=0) {
+image.src = "image/im1.jpg";
+document.getElementById("demo") .innerHTML="Enter Number Of Passengers";
+}
+else if (y==1){
+image.src = "image/small1.jpg";
+document.getElementById("demo") .innerHTML="Honda Brio <br>1-2 Seater<br>$20/Hour";
+}
+else if (y==2){
+image.src = "image/small2.jpg";
+document.getElementById("demo") .innerHTML="Mazda-MX-5-2 Seater<br>convertable<br>$80/Hour";
+document.getElementById("name").value = ""; 
+}
+else if (y==3){
+image.src = "image/mid1.png";
+document.getElementById("demo") .innerHTML="Toyota Corolla Altis<br>3-4 Seater<br>$40/Hour";
+}
+else if (y==4){
+image.src = "image/mid2.jpg";
+document.getElementById("demo") .innerHTML="BMW<br>4 Seater<br>$80/Hour";
+}
+else if (y==5){
+image.src = "image/suv1.jpg";
+document.getElementById("demo") .innerHTML="Hyundai santa fe<br>4 Seater<br>$60/Hour";
+}
+else if (y==6){
+image.src = "image/suv3.jpg";
+document.getElementById("demo") .innerHTML="Nissan Armada<br>6 Seater<br>$60/Hour";
+}
+else if (y==7){
+image.src = "image/suv2.jpg";
+document.getElementById("demo") .innerHTML="KIA Sorento<br>7 Seater<br>$60/Hour";
+}
+else if (y==8){
+image.src = "image/8seat.jpg";
+document.getElementById("demo") .innerHTML="GMC Yuko<br>8 Seater<br>$60/Hour";
+}
+else if (y==9){
+image.src = "image/suv4.jpg";
+document.getElementById("demo") .innerHTML="Chevrolet Suburban <br>9 Seater<br>$80/Hour";
+}
+else if (y==10){
+image.src = "image/van1.jpg";
+document.getElementById("demo") .innerHTML="Toyota Hiace <br>10 Seater<br>$80/Hour";
+}
+else if (y>=11){
+image.src = "image/temp1.jpg";
+}
+}
+</script>
+<P id="demo"></p>
+</div>
+
+<!-- Using javascript variables displaying car catagories,price and availablle cars in a table-->
+<script>
+	  var carname1 = "Hatchbacks";
+      var carname2 = "Sedans";
+      var carname3 = "Suv";
+      var carname4 = "Luxury";
+      var carprice1 = 20;
+      var carprice2=  40;
+      var carprice3 = 60;
+      var carprice4 = 80;
+	  var vch1="Ford Focus,Honda Fit,Toyota Prius"
+	  var vch2="Honda Civic,Toyota Corolla,Ford Fusion"
+	  var vch3="Kia Soreneto,Hyundai Santa Fe,Ford Escape"
+	  var vch4="BMW 5 Series,Lexus Es,Audi Q7,Cadillac CTS"
+	  </script>
+      <table>
+         <thead>
+            <tr>
+               <th>CAR'S</th>
+               <th>$ PER HOUR</th>
+			   <th>  AVAILABLE VEHICLE</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>
+<script>
+document.write(carname1);
+</script>
+               </td>
+               <td>
+<script>
+document.write(carprice1);
+</script>
+               </td>
+			   <td>
+			   <script>
+			   document.write(vch1);
+			   </script>
+			   </td>
+            </tr>
+            <tr>
+               <td>
+<script>
+document.write(carname2);
+</script>
+               </td>
+               <td>
+<script>
+document.write(carprice2);
+</script>
+               </td>
+			   <td>
+			   <script>
+			   document.write(vch2);
+			   </script>
+			   </td>
+            </tr>
+            <tr>
+               <td>
+<script>
+document.write(carname3);
+</script>
+               </td>
+               <td>
+<script>
+document.write(carprice3);
+</script>
+               </td>
+			   <td>
+			   <script>
+			   document.write(vch3);
+			   </script>
+			   </td>
+            </tr>
+            <tr>
+               <td>
+<script>
+document.write(carname4);
+</script>
+               </td>
+               <td>
+<script>
+document.write(carprice4);
+</script>
+               </td>
+			   <td>
+			   <script>
+			   document.write(vch4);
+			   </script>
+			   </td>
+            </tr>
+         </tbody>
+      </table>
+   </article>
+   </div>
+ <!-- Adde dopdown list for selection-->
+<div class="newdiv">
+<form name="carcal">
+Select type of car
+<select id="car" onchange="rate">
+        <option selected disabled>Choose one</option>
+        <option value="20">HATCHBACK</option>
+        <option value="40">SEDAN</option>
+        <option value="60">SUV</option>
+        <option value="80">LUXUARY</option>
+  </select>
+  <br>
+  <br>
+Select hours
+<input type="number" name="days"></br>
+<br>
+<input type="button" value="Total Amount" onclick="cal()"> 
+</br>
+<br>
+Total Amount:$
+<input type="number" name="total"></br>
+</form>
+</div>
+<script>
+<!-- Added javascriipt codes for calculation ->
+function cal() {
+var  carrate=document.getElementById("car").value;
+var tdays=document.carcal.days.value;
+var total=tdays * carrate;
+document.carcal.total.value=""+total;
+}
+</script>  
+   <!--Content for footer-->
+<footer> 
+	Copyright &copy; 2018 Sreecarcare <br>
+</footer>
+</body>
+</html>
