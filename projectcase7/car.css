@@ -1,0 +1,149 @@
+* { box-sizing: border-box; } /* box around header */
+
+/* Body background style */
+body
+ { background-color: #ffffff;  
+		color: black;
+		font-family: Verdana,
+		Arial, sans-serif,Algerian;
+		}
+		
+/* Styles in title */
+		#carcare
+		{
+background-color: black; 
+background-image: url(image/rent1.png);
+background-position: right;
+background-repeat: no-repeat;
+margin-top:0px;
+height: 250px;
+width: 100%
+padding-left: 1em;
+background-color: white;
+color: #4d004d;
+text-align:center;
+font-family:Algerian;
+font-size:24px;
+} 
+
+/* Navigation background color */
+.carnav {
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Navigation bar  styles */
+.carnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	border-top:1px solid #ffffff;
+	border-bottom:1px solid 	 #ffffff;
+	border-right: 1px solid #ffffff;
+    font-size: 17px;
+}
+.carnav  a:hover{
+	background-color:#9999ff;
+	color:black;
+}
+
+.carhead
+{
+	background-color:gray;
+	margin-top:0px;
+	color:#ffffff;
+	text-align:center;
+	
+}
+.cartext
+{
+	font-size:22px;
+	text-align:center;
+	color:#800000;
+	text-decoration:underline;
+}
+/*Style for calculation */
+	.newdiv
+	{
+		background-color:white;
+	margin-top:0px;
+	color:black;
+	text-align:center;
+	border-top:1px solid #08234f;
+	border-bottom:1px solid #08234f;
+	}
+
+/* Style for unordered list */
+article 
+{
+	font-size:18px;
+	color: black;
+	text-align:left;
+	
+
+}
+/*Styles for table */
+
+article table {
+   margin: 0 auto;
+   border: 1px solid black;
+   border-collapse: compact;
+   background: #ffffff;
+}
+
+article table th, article table td {
+   padding: 5px 10px;
+   border: 1px solid black;
+}
+
+article table th {
+   font-weight: bold;
+   text-align: center;
+   border-bottom: 3px solid black;
+}
+
+/*Styles for About Us*/
+.about
+{
+	background-image:url(image/car4.jpg);
+	background-position:top;
+	background-repeat:no-repeat;
+	padding-top:200px;
+text-align:left;
+font-size:18px;
+font-style:italic;
+color:#330011;
+ border: 2px solid black;
+ 
+}
+/* styles for image caption*/
+figcaption {
+  padding: 5px;
+  font-family: 'Cherry Swash', cursive;
+  font-size: 1em;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  word-wrap:normal;
+  text-align: left;
+}
+/*Styles for validation form */
+.vald{
+	border : 15px solid #008000;
+	height: 300px;
+	width:500px;
+	margin:auto;
+	text-align:center;
+	box-shadow:10px 15px 10px #888888
+	
+}
+
+
+/* Footer*/
+footer { background-color:#ffffff; 
+			font-size: small;
+			font-style: italic;
+			text-align: center;
+			padding: 1em; } 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- 
+      Website: Car Care -project- 7
+       Author: Sreekanth
+       Date: 11.19.2018
+-->
+
+<html lang="en">
+<head>
+<title>CarCare</title>  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="car.css"> 
+<script src="modernizr.custom.05819.js"></script>
+</head>
+<!-- Adding navigation bar-->
+<body>
+<div class="carnav">
+<a href="index.html">Home</a> 
+<a href="carrental.html">Car Rental</a> 
+<a href="caracces.html">Car Accesories</a> 
+<a href="aboutus.html">About Us</a>
+<a href="contact.html">Contact Us</a>
+</div>
+<header>
+<div id="carcare">
+<br>
+<h2> CAR CARE</h2>
+<h3>"Complete Car Solution "</h3>
+</header>
+<div class="carhead">
+<header>
+<h2> Home</h2>
+</div>
+</header>
+<div class ="cartext">
+<p >Date  Calculation</p>
+</div>
+<div class="vald">
+<br>
+Car Buy Date:-<input type="text" name="startd" id="startd" placeholder="YYYY-MM-DD" /><br/><br/>
+Car Sell Date:-<input type="text" name="endd" id="endd" placeholder="YYYY-MM-DD"  /><br/><br/>
+<input type="button" name="submit" value="submit" onclick="test();" />
+<p />
+Total  usage is:-<p id="totl"></p>
+</div>
+<script src="date.js"></script>
+<!--Content for footer-->
+<footer> 
+	Copyright &copy; 2018 Sreecarcare <br>
+</footer>
+</body>
+</html>
