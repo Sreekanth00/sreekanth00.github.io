@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- 
+      Website: Car Care -project- 6
+       Author: Sreekanth
+       Date: 11.19.2018
+-->
+
+<html lang="en">
+<head>
+<title>CarCare</title>  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="car.css"> 
+<script src="modernizr.custom.05819.js"></script>
+</head>
+<!-- Adding navigation bar-->
+<body>
+<div class="carnav">
+<a href="index.html">Home</a> 
+<a href="carrental.html">Car Rental</a> 
+<a href="caracces.html">Car Accesories</a> 
+<a href="aboutus.html">About Us</a>
+<a href="contact.html">Contact Us</a>
+</div>
+<header>
+<div id="carcare">
+<br>
+<h2> CAR CARE</h2>
+<h3>"Complete Car Solution "</h3>
+</header>
+<div class="carhead">
+<header>
+<h2> Home</h2>
+</div>
+</header>
+<div class ="cartext">
+<p >REGISTRATION</p>
+</div>
+<div class="vald">
+<br>
+<form action="#" method="post" onsubmit=" return validate ()">
+         <label for="nametxt">
+            Name
+            <input type="text"id="name" name="name" placeholder="Enter the name" />
+          </label>
+		  <br>
+		 <br> 
+          <label for="emailltxt">
+            Email
+            <input type="email" id="email" name="email" placeholder="Enter valid E-mail" />
+          </label>
+		  <br/>
+		  <br/>
+		  <label>Gender:</label>
+    <input id="rd" type="radio" name="gender" value="F" />
+    <label for="female">Female</label>
+    <input id="rd1" type="radio" name="gender" value="M" />
+    <label for="Male">Male</label>
+			  <br>
+		  <br>
+		  <label for="Commenttxt">Comment</label>
+  <textarea name="myComments" id="comment" rows="6" cols="30"  placeholder="Comments "></textarea>
+		  <br>
+		  <br>
+  <input type="submit" value="Submit"  />
+  </form>
+		  
+</div>
+<!--Codes for validating feilds-->
+<script>
+function validate(){
+if  (document.getElementById("name").value=="" || document.getElementById("email").value=="" || document.getElementById("comment").value=="" ){
+alert ("please enter all fields");
+}
+ else {
+ alert("Registration Success");
+ }
+  return false;
+ }
+ 
+</script>
+<!--Content for footer-->
+<footer> 
+	Copyright &copy; 2018 Sreecarcare <br>
+</footer>
+</body>
+</html>
