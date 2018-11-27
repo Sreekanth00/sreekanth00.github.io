@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- 
+      Website: Car Care -project- 8
+       Author: Sreekanth
+       Date: 11.26.2018
+-->
+
+<html lang="en">
+<head>
+<title>CarCare</title>  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="car.css"> 
+<script src="modernizr.custom.05819.js"></script>
+</head>
+<!-- Adding navigation bar-->
+<body>
+<div class="carnav">
+<a href="index.html">Home</a> 
+<a href="carrental.html">Car Rental</a> 
+<a href="caracces.html">Car Accesories</a> 
+<a href="aboutus.html">About Us</a>
+<a href="contact.html">Contact Us</a>
+</div>
+<header>
+<div id="carcare">
+<br>
+<h2> CAR CARE</h2>
+<h3>"Complete Car Solution "</h3>
+</header>
+<div class="carhead">
+<header>
+<h2> Home</h2>
+</div>
+</header>
+<div class ="cartext">
+<p >Project 8</p>
+</div>
+<div class="vald">
+<br>
+<input type="text" name="name" id="nam" placeholder="Name" required="required" /><br/><br/>
+<input type="text" name="email" id="mail" placeholder="E-mail"  required="required"/><br/><br/>
+<input type="text" name="city" id="Cit" placeholder="City"  required="required"/><br/><br/>
+<input type="text" name="state" id="ste" placeholder="State"  required="required"/><br/><br/>
+<p> Select type of car</p><br/>
+            <input type="checkbox" id="htbc" value="Hatchback" name="sele" >
+            <label for="htbc" id="htbclbl">Hatchback</label>
+            <input type="checkbox" id="sdn" value="Sedan"  name="sele">
+            <label for="sdn" id="sdnlbl">Sedans</label>
+            <input type="checkbox" id="sv" value="Suv" name="sele">
+            <label for="sv" id="sv1bl">SUV</label>
+            <input type="checkbox" id="lxy" value="Luxury"  name="sele">
+            <label for="lxy" id="lxylbl">Luxury</label>
+			<br/><br/>
+Selected car are:<br/>
+<ul  id="carlist"></ul>
+</div>
+<script src="arry.js"></script>
+<!--Content for footer-->
+<footer> 
+	Copyright &copy; 2018 Sreecarcare <br>
+</footer>
+</body>
+</html>
