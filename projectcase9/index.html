@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- 
+      Website: Car Care -project- 9
+       Author: Sreekanth
+       Date: 11.26.2018
+-->
+
+<html lang="en">
+<head>
+<title>CarCare</title>  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="car.css"> 
+<script src="modernizr.custom.05819.js"></script>
+</head>
+<!-- Adding navigation bar-->
+<body>
+<div class="carnav">
+<a href="index.html">Home</a> 
+<a href="carrental.html">Car Rental</a> 
+<a href="caracces.html">Car Accesories</a> 
+<a href="aboutus.html">About Us</a>
+<a href="contact.html">Contact Us</a>
+</div>
+<header>
+<div id="carcare">
+<br>
+<h2> CAR CARE</h2>
+<h3>"Complete Car Solution "</h3>
+</header>
+<div class="carhead">
+<header>
+<h2> Home</h2>
+</div>
+</header>
+<div class ="cartext">
+<p >Project 9</p>
+</div>
+<div class="vald">
+<br/>
+<br/>
+<br/>
+<input type="text" name="name" id="nam" placeholder="Name" value="" /><br/><br/>
+<span id="totl" style="color:#ff1a1a"></span><br/><br/>
+<input type="text" name="city" id="state" placeholder="State"  required="required"/><br/><br/>
+<span id="totlc"style="color:#ff1a1a"></span><br/><br/>
+<input type="text" name="state" id="zp" placeholder="Zip"  required="required"/><br/><br/>
+<span id="totlz"style="color:#ff1a1a"></span><br/><br/>
+
+<input type="submit"  value="submit" onclick="return validation();"></input>
+</div>
+<script>
+function validation(){
+
+        var a= document .getElementById("nam").value;
+        var city=document .getElementById("state").value;
+		var zip =document .getElementById("zp").value;
+		var numbers =/^\d+(-\d+)*$/;
+		if (a==""){
+		document .getElementById("totl").innerHTML="Please enter name";
+		return false;
+		}else{
+	document .getElementById("totl").innerHTML="";
+		}
+		if (a.length<3){
+		document .getElementById("totl").innerHTML="Name must be atleast three character";
+		return false;
+		}
+		else{
+	document .getElementById("totl").innerHTML="";
+		}
+		
+		if (city==""){
+		document .getElementById("totlc").innerHTML="Enter proper city";
+		return false;
+		} 
+		else{
+	document .getElementById("totlc").innerHTML="";
+		}
+		if (zip==""){
+		document .getElementById("totlz").innerHTML="Please enter zip code";
+		return false;
+		}
+		if (zip.length<5){
+		document .getElementById("totlz").innerHTML='Number must be minimum 5 digit';
+     return false;
+	 }
+		if (zip.length>=12){
+		document .getElementById("totlz").innerHTML='Number not more than 10 digit';
+     return false;
+	 }
+	if (zip.match(numbers)) {
+     document .getElementById("totlz").innerHTML='';
+     return true;
+   }
+   else {
+     document .getElementById("totlz").innerHTML='please use correct format';
+     return false;
+   }
+   
+}
+</script>
+<!--Content for footer-->
+<footer> 
+	Copyright &copy; 2018 Sreecarcare <br>
+</footer>
+</body>
+</html>
